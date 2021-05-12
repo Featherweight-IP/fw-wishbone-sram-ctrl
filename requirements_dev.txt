@@ -1,0 +1,9 @@
+
+cocotb
+assertpy
+
+-e git+ssh://git@github.com/pybfms/pybfms.git#egg=pybfms
+-e git+ssh://git@github.com/pybfms/pybfms-wishbone.git#egg=pybfms-wishbone
+-e git+ssh://git@github.com/pybfms/pybfms-generic-sram.git#egg=pybfms-generic-sram
+-e git+ssh://git@github.com/fvutils/mkdv.git#egg=mkdv
+
