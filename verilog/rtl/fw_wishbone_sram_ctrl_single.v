@@ -26,8 +26,9 @@ module fw_wishbone_sram_ctrl_single #(
 	reg[DAT_WIDTH-1:0]		tmp_dat;
 	reg[ADR_WIDTH-1:0]		sram_adr;
 	reg						sram_we;
-	
-	assign i_addr = t_adr;
+
+	// TODO: base on data width
+	assign i_addr = t_adr[ADR_WIDTH-1:2];
 	reg[DAT_WIDTH-1:0]		write_data;
 	assign i_write_data = write_data;
 	
