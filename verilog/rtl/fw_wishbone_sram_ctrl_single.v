@@ -117,7 +117,9 @@ module fw_wishbone_sram_ctrl_single #(
 				
 				3'b001: begin // Atomic phase1: read + operate on data
 					case (t_tgc) // synopsys parallel_case full_case
-						`WB_AMO_SWAP: tmp_dat <= i_read_data;
+						`WB_AMO_SWAP: begin
+							tmp_dat <= i_read_data;
+						end
 						`WB_AMO_ADD: tmp_dat <= i_read_data + t_dat_w;
 						`WB_AMO_AND: tmp_dat <= i_read_data & t_dat_w;
 						`WB_AMO_OR:  tmp_dat <= i_read_data | t_dat_w;
