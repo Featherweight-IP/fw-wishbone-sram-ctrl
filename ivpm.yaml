@@ -1,0 +1,26 @@
+package:
+    name: fw-wishbone-sram-ctrl
+    version: None
+    deps:
+        - name: fwprotocol-defs
+          url: https://github.com/Featherweight-IP/fwprotocol-defs.git
+          type: raw
+    dev-deps:
+        - name: fwprotocol-defs
+          url: https://github.com/Featherweight-IP/fwprotocol-defs.git
+          type: raw
+        - name: cocotb
+          type: python
+          src: pypi
+        - name: assertpy
+          type: python
+          src: pypi
+        - name: pybfms
+          src: pypi
+        - name: pybfms-wishbone
+          url: https://github.com/pybfms/pybfms-wishbone.git
+        - name: pybfms-generic-sram
+          url: https://github.com/pybfms/pybfms-generic-sram.git
+        - name: mkdv
+          url: https://github.com/fvutils/mkdv.git
+
