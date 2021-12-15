@@ -1,4 +1,7 @@
 CAPI=2:
+#****************************************************************************
+#* fw-wishbone-sram-ctrl.core
+#****************************************************************************
 
 name: featherweight-ip::fw-wishbone-sram-ctrl:0.0.1
 description: SRAM controller with a Wishbone interface
