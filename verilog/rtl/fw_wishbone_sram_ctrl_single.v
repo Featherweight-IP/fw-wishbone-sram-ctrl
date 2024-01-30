@@ -31,6 +31,7 @@ module fw_wishbone_sram_ctrl_single #(
 	assign i_addr = t_adr[ADR_WIDTH-1:2];
 	reg[DAT_WIDTH-1:0]		write_data;
 	assign i_write_data = write_data;
+    assign t_err = 1'b0;
 	
 	always @* begin
 		if (state == 3'b011 && t_tgc != `WB_AMO_SWAP) begin
