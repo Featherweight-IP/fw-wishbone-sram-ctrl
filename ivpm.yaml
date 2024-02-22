@@ -24,3 +24,8 @@ package:
         - name: mkdv
           url: https://github.com/fvutils/mkdv.git
 
+    paths:
+      export:
+        lib-dirs:
+          - verilog/rtl
+

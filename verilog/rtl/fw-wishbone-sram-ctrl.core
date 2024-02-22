@@ -9,7 +9,7 @@ description: SRAM controller with a Wishbone interface
 filesets:
   rtl:
     files:
-      - verilog/rtl/fw_wishbone_sram_ctrl_single.v
+      - fw_wishbone_sram_ctrl_single.v
     file_type: verilogSource
     depend:
       - featherweight-ip::fwprotocol-defs
